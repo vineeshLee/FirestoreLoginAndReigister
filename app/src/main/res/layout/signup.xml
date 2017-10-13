@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+
+    <com.expose.vinu.custom_font.MyTextView
+      android:layout_above="@+id/main"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Create Account"
+      android:gravity="center"
+      android:textColor="#fff"
+      android:fontFamily="sans-serif-condensed"
+      android:textStyle="bold"
+      android:textSize="20dp"
+      android:layout_marginBottom="75dp"/>
+
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/roundwhite">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/email"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"/>
+        <com.expose.vinu.custom_font.MyEditText
+            android:id="@+id/email"
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:paddingLeft="10dp"
+android:letterSpacing="0.1"
+            android:hint="Email Address"
+            android:textColor="#fff"
+
+            android:textColorHint="#fff"
+            android:drawablePadding="10dp"
+            android:textSize="13dp"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/roundwhite"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/password"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"/>
+    <com.expose.vinu.custom_font.MyEditText
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Password"
+     android:background="#00000000"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:letterSpacing="0.1"
+        android:textColorHint="#fff"
+        android:drawablePadding="10dp"
+        android:textSize="13dp"
+        />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundwhite"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/password"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            />
+
+
+    <com.expose.vinu.custom_font.MyEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+      android:background="#00000000"
+        android:paddingLeft="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:id="@+id/ConfirmPassword"
+        android:textSize="13dp"
+        android:letterSpacing="0.1"
+        android:layout_weight="1"
+        />
+    </LinearLayout>
+    <com.expose.vinu.custom_font.MyTextView
+        android:id="@+id/getstarted"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+
+        android:text="Signup"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_above="@+id/bottom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+
+<LinearLayout
+    android:id="@+id/bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <com.expose.vinu.custom_font.MyTextView
+
+        android:id="@+id/signin"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signin !"
+        android:textColor="#FFF"/>
+    <com.expose.vinu.custom_font.MyTextView
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Need Help ?"
+        android:textColor="#FFF"
+        android:gravity="end"/>
+</LinearLayout>
+
+
+</LinearLayout>
+</RelativeLayout>

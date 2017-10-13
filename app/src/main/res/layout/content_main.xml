@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uikitbgclear">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background1"
+        android:scaleType="fitXY"
+        />
+
+
+    <TextView
+        android:id="@+id/holliday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FireStore"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="70dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/roundwhite">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/username"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"/>
+            <com.expose.vinu.custom_font.MyEditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:paddingLeft="10dp"
+                android:id="@+id/username"
+                android:hint="Username"
+                android:textColor="#fff"
+
+                android:textColorHint="#fff"
+                android:drawablePadding="10dp"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/roundwhite"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/pass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/password"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                />
+
+
+            <com.expose.vinu.custom_font.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:paddingLeft="10dp"
+                android:hint="Password"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <com.expose.vinu.custom_font.MyTextView
+            android:id="@+id/getstarted"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round"
+
+            android:text="Get Started"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:layout_above="@+id/bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <com.expose.vinu.custom_font.MyTextView
+                android:id="@+id/createaccount"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold"
+                android:textColor="#FFF"/>
+            <com.expose.vinu.custom_font.MyTextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need Help ?"
+                android:id="@+id/needhelp"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:textColor="#FFF"
+
+                android:gravity="end"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
